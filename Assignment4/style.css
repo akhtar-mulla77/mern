@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.todo-card {
+  background: white;
+  width: 360px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.todo-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+}
+
+#addBtn {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background-color: #0056b3;
+}
+
+/* ORDERED LIST */
+ol {
+  padding-left: 22px;
+  margin: 0;
+}
+
+/* LIST ITEM (KEEP NORMAL) */
+li {
+  margin-bottom: 10px;
+}
+
+/* FLEX ROW INSIDE LI */
+.todo-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* TASK TEXT */
+.todo-row span {
+  word-break: break-word;
+}
+
+/* DELETE BUTTON AT RIGHT END */
+.delete-btn {
+  margin-left: auto;
+  padding: 4px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
